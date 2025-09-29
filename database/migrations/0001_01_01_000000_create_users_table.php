@@ -15,8 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('google_id')->nullable(); // Añadida la columna google_id
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password')->nullable(); // Si usas solo Google Login, la contraseña puede ser nula.
             $table->rememberToken();
             $table->timestamps();
         });
