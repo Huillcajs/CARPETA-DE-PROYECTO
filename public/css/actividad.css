@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+}
+
+.sesion-cards{
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente fila */
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    padding: 40px 120px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    width: 315px;
+    height: 333px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 10px;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 12px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.botones{
+    display: flex;
+    gap: 20px;
+}
+
+.github{
+    background-color: black;
+    color: white;
+    padding: 12px 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.descargar{
+    background-color: white;
+    color: black;
+    padding: 12px 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
