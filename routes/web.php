@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GuiaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ACTIVIDADController;
 use App\Http\Controllers\GUIASController;
@@ -11,6 +12,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
 // Rutas de login / register (Laravel Auth por defecto)
 Auth::routes();
 
@@ -42,3 +44,10 @@ Route::get('/guia', function () {
 
 Route::get('/descargar-actividad/{nombre}', [ACTIVIDADController::class, 'descargarActividad'])->name('descargar.actividad');
 Route::get('/descargar-guia/{nombre}', [GUIASController::class, 'descargarGuia'])->name('descargar.guia');
+=======
+// La ruta de recursos crea automáticamente: index, create, store, show, edit, update, destroy
+Route::resource('guias', GuiaController::class);
+
+// Puedes definir una ruta principal si quieres que sea la página de inicio
+Route::redirect('/', '/guias');
+>>>>>>> Gian
